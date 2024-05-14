@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>education</title>
+    <link rel = "stylesheet" href = "aboutme.css">
+    <link rel = "stylesheet" href="aboutme.html">
+</head>
+<body>
+<!-- nav bar -->
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+
+<nav>
+    <ul>
+    <div class= "navbar">
+<div class="aboutme">
+    <li><a href="#aboutme">about me</a></li>
+</div>
+<div class="education">
+    <li><a href="education.html">education</a></li>
+</div>
+    <div class="dropdown"> 
+    <button class="dropbutton">
+<div class="films"> 
+    <li> <a> films </a></li>
+<div class="dropdown-items">
+    <!-- replace href with actual content present in page-->
+    <li><a href ="films1.html"> thriller </a></li>
+    <li><a href ="films2.html"> horror </a></li>
+</div>
+</div>
+</div>
+</button>
+<div class="tvseries"> 
+<li><a href ="tvseries.html"> tv series </a></li>
+</div>
+<div class="contactme"> 
+<li> <a href ="contactme.html"> contact me </a></li>
+</div>
+</div>
+</div>
+</ul>
+</nav>
+</div> <!-- div for animated sidebar-->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+    <h1> AYSA'S FILM PORTFOLIO </h1>
+    <h1> ʚ♡ɞ </h1>
+
+    <img src = "images/tulips2.jpg" alt="tulips">
+
+    <br> <br> 
+    <marquee direction = "right" animation ="10s">
+    <h2 id = "education"> <i> Education </i></h2>
+</marquee>
+
+<!-- assigning a class to the image to center align it -->
+<img src = "images/education.jpeg" alt="picture" class ="image"
+
+<!-- assigning a class to this part of the text to customise it better -->
+<div class="text">
+<p> For primary school, I studied in School Of Knowledge, Sharjah up until 6th grade. <br>
+Then I moved to British International School, Ajman to fully complete my studies. <br>I did my a-levels there and succesfully graduated!! <br>
+Now I'm doing my bachelors degree in Creative Computing at Bath Spa University RAK.
+</p>
+</div>
+<br>
+<a href="index.html" class="previous round">&#8249;</a> 
+<br><br>
+<a href="films1.html" class="next round">&#8250;</a>
+
+
+</body>
+</html>
