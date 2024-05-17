@@ -1,3 +1,23 @@
+
+/* width of the custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: beige; 
+}
+
+/* handle of scrollbar */
+::-webkit-scrollbar-thumb {
+    background: rgba(183, 115, 115, 0.583); 
+}
+ 
+/* handle on user hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #A98787; 
+}
+
 body {
     height: 7000px;
     background: linear-gradient(141deg, beige 0%, white 51%, rgb(250, 236, 238) 75%);
@@ -7,11 +27,6 @@ body {
 
 aboutme.html {
     height: 500px;
-}
-
-/*to make the sliding text effect*/
-marquee {
-    background-color: rgb(244, 230, 232);
 }
 
 h1 {
@@ -28,6 +43,71 @@ h2 {
     font-size: 200%;
 }
 
+.header {
+    padding: 10px 16px;
+    color: #A98787;
+}
+
+ /* for the typewriter animation */
+.container1 {
+    display: inline-block;
+    display: center;
+    text-align: center;
+    margin-left: 40%;
+}
+
+ /* container2 specific to only education.html page */
+.container2 {
+    display: inline-block;
+    display: center;
+    text-align: center;
+    margin-left: 45%;
+}
+
+.container3 {
+    display: inline-block;
+    display: center;
+    text-align: center;
+    margin-left: 45%;
+}
+
+.container4 {   
+    display: inline-block;
+    display: center;
+    text-align: center;
+    margin-left: 35%;
+}
+
+.container5 {
+    display: inline-block;
+    display: center;
+    text-align: center;
+     margin-left: 34%;
+}
+
+.text {
+    letter-spacing: 5px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s,
+    cursor .4s step-end infinite alternate; 
+    text-align: center;
+    float: center;
+    background-color: rgb(244, 230, 232);
+}
+
+ /* for the cursor blinking effect */
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+
+ /* for the typing effect*/
+ @keyframes typing {
+    from {width:0}
+ }
+
 h3 {
     color: #A98787;
     text-align: center;
@@ -35,16 +115,6 @@ h3 {
     font-size: 200%;
 }
 
-.navbar ul {
-    list-style:none;
-    padding: 10;
-    margin: 0;
-    background-color: #A98787;
-    text-align: left;
-    float: left;
-    margin-bottom: 60cm;
-    
-}
 
 .navbar li {
     display: inline-block;
@@ -66,11 +136,6 @@ h3 {
     background-color: #A98787;
     justify-content: space-evenly;
 
-}
-
-nav {
-    position: sticky;
-    top: 0;
 }
 
 .navbar a.active {
@@ -136,6 +201,7 @@ z-index: 1;
 span {
     color: #A98787;
     margin-top: 50%;
+
 }
 
 /* for the items present inside sidenav */
@@ -148,6 +214,7 @@ span {
     transition: 0.3s;
 }
 
+/* to style the close button */
 .sidenav .closebutton {
     position: absolute;
     top: 0;
@@ -314,34 +381,116 @@ a:hover {
 }
   
 /* for social media icon */
-.insta {
+.fa-instagram{
     background: rgb(244, 230, 232);
     color: #A98787;
+    margin-left: 20%;
 }
 
-.pin {
+.fa-pinterest {
     background:rgb(244, 230, 232);
     color: #A98787;
 }
 
 .fa:hover {
-    opacity: 0.10;
+    opacity: 0.12;
 }
   
-.insta {
-  padding: 30px;
-  font-size: 70px;
-  width: 30px;
+.fa-instagram {
+  padding: 50px;
+  font-size: 100px;
+  width: 50px;
   text-align: center;
   text-decoration: none;
-  margin: 10px 2px;
+  margin: 10px 5px;
+  margin-left: 46%;
 }
-
-.pin {
-    padding: 30px;
-    font-size: 70px;
+.fa-pinterest {
+    padding: 50px;
+    font-size: 100px;
     width: 50px;
     text-align: center;
     text-decoration: none;
-    margin: 10px 2px;
-  }
+    margin: 10px 5px;
+    margin-left: 46%;
+}
+  
+contactme.html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #A98787;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width:120px;
+    height: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/*to change how the input buttons look*/
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid rgba(255, 182, 194, 0.689);
+
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font: size 15px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, pink, rgba(237, 203, 208, 0.583));
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+
+    .contact-right {
+        display: none;
+    }
+}
