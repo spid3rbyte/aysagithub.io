@@ -19,7 +19,7 @@
     <ul>
     <div class= "navbar">
 <div class="aboutme">
-    <li><a href="#aboutme">about me</a></li>
+    <li><a href="index.html">about me</a></li>
 </div>
 <div class="education">
     <li><a href="education.html">education</a></li>
@@ -59,35 +59,41 @@
     }
 </script>
 
-    <h1> AYSA'S FILM PORTFOLIO </h1>
+<!-- span element to change the word's color -->
+<h1> <span style="color:rgba(198, 134, 167, 0.678);">AYSA'S</span>
+    <br><span style="color:rgb(192, 163, 163);">FILM</span>
+    <br><span style="color:rgba(114, 82, 82, 0.827);">PORTFOLIO</span></h1>
     <h1> ʚ♡ɞ </h1>
 
     <img src = "images/tulips2.jpg" alt="tulips">
 <!-- to make the sliding text effect -->
- <marquee direction = "right" animation ="10s">
-    <h2 id = "aboutme"> <i> Contact me ! :) </i> </h2>
-</marquee>
+ <div class = "container6">
+    <h2 id = "aboutme" class="text"> <i> Contact me ! :) </i> </h2>
+ </div>
 
-<h2>Send an email to me, aysaakther17@gmail.com:</h2>
+<div class = "contact-container">
+    <form action ="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class = "contact-left-title">
+            <h2>Send an email to me, aysaakther17@gmail.com:</h2>
+            <hr>
+        </div>
+        <input type="hidden" name="access_key" value="01083cdd-2db0-4333-95d5-feec89afbf28">
+        <input type="text" name="name" placeholder="your name"class="contact-inputs" required>
+        <input type="email" name="email" placeholder="your email"class="contact-inputs" required>
+        <textarea name ="message" placeholder="your message" class="contact-inputs"required></textarea>
+        <button type="submit">submit message </button>
+    </form>
+<div class = "contact-right">
+    <img src ="images/flowers.jpg" width="300"height="300">
+</div>
 
-<form action="mailto:aysaakther17gmail.com" method="post" enctype="text/plain" class = "form">
-name:<br>
-<input type="text" name="name"><br>
-e-mail:<br>
-<input type="text" name="mail"><br>
-message:<br>
-<input type="text" name="comment" size="50"><br><br>
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
-</form>
+</div>
 
-<br><br>
+<!-- for social media icons-->
 <div class ="insta">
-<a href="#" class="fa fa-instagram"></a>
+<a href="https://www.instagram.com/l0veaysa/" class="fa fa-instagram"></a>
 </div>
-<div class ="pin">
-<a href="#" class="fa fa-pinterest"></a>
-</div>
+<a href="https://www.pinterest.com/spid3rbyte/" class="fa fa-pinterest"></a>
 
 <br>
 <br>
