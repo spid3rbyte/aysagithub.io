@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web dev - portfolio</title>
+    <title>aysa's film portfolio</title>
     <!-- to add the google font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=AnticDidone">
     <!-- linking stylesheet -->
@@ -64,14 +64,18 @@
     }
 </script>
 
-    <h1> AYSA'S FILM PORTFOLIO </h1>
+<!-- span element to change the word's color -->
+<h1> <span style="color:rgba(198, 134, 167, 0.678);">AYSA'S</span>
+    <br><span style="color:rgb(192, 163, 163);">FILM</span>
+    <br><span style="color:rgba(114, 82, 82, 0.827);">PORTFOLIO</span></h1>
     <h1> ʚ♡ɞ </h1>
 
     <img src = "images/tulips2.jpg" alt="tulips">
-<!-- to make the sliding text effect -->
- <marquee direction = "right" animation ="10s">
-    <h2 id = "aboutme"> <i> Get to know me! </i> </h2>
-</marquee>
+
+<!-- typewriter effect -->
+<div class = "container1">
+    <h2 id = "aboutme" class = "text"> <i> Get to know me! </i> </h2> 
+</div>
 <!-- assigning a class to the image to center align it -->
 <img src = "images/aboutme.jpeg" alt="picture" class ="image"> 
 
@@ -79,6 +83,9 @@
     I deeply love all types of films, specifically thriller movies, <br>
     and I can tell you they’re WAY better than your average horror movies. <br>
     They’re definitely guaranteed to keep you on the edge of your seat. 
+    <br><br>
+    In my film portfolio, <br>I will be showing you the films as well as the tv series I've watched,<br>
+     and my reviews on them. I hope you enjoy :)
 </p>
 
 <!-- to make a go to next page button-->
@@ -87,6 +94,20 @@
 <p> <i>to the next page!</i></p>
 <a href="education.html" class="next round">&#8250;</a>
 
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 </html>
