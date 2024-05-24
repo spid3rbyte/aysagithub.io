@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>education</title>
     <link rel = "stylesheet" href = "aboutme.css">
+    <link rel = "stylesheet" href = "education.css">
     <link rel = "stylesheet" href="aboutme.html">
 </head>
 <body>
@@ -79,10 +80,68 @@ Then I moved to British International School, Ajman to fully complete my studies
 Now I'm doing my bachelors degree in Creative Computing at Bath Spa University RAK.
 </p>
 <br>
+
+
+<!-- skill bar -->
+<div class = "container8">
+    <h2 id = "education" class="text"> <i> Skills </i></h2>
+</div>
+<div class ="skillbar">
+    <div class="skills">
+        <h3> HTML </h3>
+        <div class ="progressbar">
+            <div class="html"><span>85%</span></div>
+        </div>
+        <h3> CSS </h3>
+        <div class ="progressbar">
+            <div class="css"><span>80%</span></div>
+        </div>
+        <h3> Python </h3>
+        <div class ="progressbar">
+            <div class="python"><span>75%</span></div>
+        </div>
+        <h3> Javascript </h3>
+        <div class ="progressbar">
+            <div class="java"><span>65%</span></div>
+        </div>
+        <h3> Canva </h3>
+        <div class ="progressbar">
+            <div class="canva"><span>85%</span></div>
+        </div>
+        <h3> Figma </h3>
+        <div class ="progressbar">
+            <div class="figma"><span>85%</span></div>
+        </div>
+    </div>
+</div>
+
+<div class = "container2">
+    <h2 id = "education" class="text"> <i> Certificates </i></h2>
+</div>
+
+<div class = "gallery">
+    <div>
+        <img src ="images/html.png">
+        <img src ="images/css.png">
+        <img src ="images/python.png">
+    </div>
+</div>
+
+<!-- javascript for gallery section -->
+<script>
+    let scrollContainer = document.querySelector(".gallery");
+    scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+</script>
+
+
+<br><br>
 <a href="index.html" class="previous round">&#8249;</a> 
 <br><br>
 <a href="films1.html" class="next round">&#8250;</a>
-
 
 </body>
 </html>
