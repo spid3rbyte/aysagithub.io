@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact me</title>
+    <link rel = "stylesheet" href = "css files/aboutme.css">
+    <link rel = "stylesheet" href="index.html">
+    <!-- to import social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- nav bar -->
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+
+<nav>
+    <ul>
+    <div class= "navbar">
+<div class="aboutme">
+    <li><a href="index.html">about me</a></li>
+</div>
+<div class="education">
+    <li><a href="education.html">education</a></li>
+</div>
+    <div class="dropdown"> 
+    <button class="dropbutton">
+<div class="films"> 
+    <li> <a> films </a></li>
+<div class="dropdown-items">
+    <!-- replace href with actual content present in page-->
+    <li><a href ="films1.html"> thriller </a></li>
+    <li><a href ="films2.html"> horror </a></li>
+</div>
+</div>
+</div>
+</button>
+<div class="tvseries"> 
+<li><a href ="tvseries.html"> tv series </a></li>
+</div>
+<div class="contactme"> 
+<li> <a href ="contactme.html"> contact me </a></li>
+</div>
+</div>
+</div>
+</ul>
+</nav>
+</div> <!-- div for animated sidebar-->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+<!-- span element to change the word's color -->
+<h1> <span style="color:rgba(198, 134, 167, 0.678);">AYSA'S</span>
+    <br><span style="color:rgb(192, 163, 163);">FILM</span>
+    <br><span style="color:rgba(114, 82, 82, 0.827);">PORTFOLIO</span></h1>
+    <h1> ʚ♡ɞ </h1>
+
+    <img src = "images/tulips2.jpg" alt="tulips">
+<!-- to make the sliding text effect -->
+ <div class = "container6">
+    <h2 id = "aboutme" class="text"> <i> Contact me ! :) </i> </h2>
+ </div>
+
+<div class = "contact-container">
+    <form action ="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class = "contact-left-title">
+            <h2>Send an email to me, aysaakther17@gmail.com:</h2>
+            <hr>
+        </div>
+        <input type="hidden" name="access_key" value="01083cdd-2db0-4333-95d5-feec89afbf28">
+        <input type="text" name="name" placeholder="your name"class="contact-inputs" required>
+        <input type="email" name="email" placeholder="your email"class="contact-inputs" required>
+        <textarea name ="message" placeholder="your message" class="contact-inputs"required></textarea>
+        <button type="submit">submit message </button>
+    </form>
+<div class = "contact-right">
+    <img src ="images/flowers.jpg" width="300"height="300">
+</div>
+
+</div>
+
+<!-- for social media icons-->
+<div class ="insta">
+<a href="https://www.instagram.com/l0veaysa/" class="fa fa-instagram"></a>
+</div>
+<a href="https://www.pinterest.com/spid3rbyte/" class="fa fa-pinterest"></a>
+
+<br>
+<br>
+<p> <i>to the previous page!</i></p>
+<a href="tvseries.html" class="previous round">&#8249;</a> 
+
+</body>
+</html>

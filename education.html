@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>education</title>
+    <link rel = "stylesheet" href = "css files/aboutme.css">
+    <link rel = "stylesheet" href = "css files/education.css">
+    <link rel = "stylesheet" href="index.html">
+</head>
+<body>
+<!-- nav bar -->
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+
+<nav>
+    <ul>
+    <div class= "navbar">
+<div class="aboutme">
+    <li><a href="index.html">about me</a></li>
+</div>
+<div class="education">
+    <li><a href="education.html">education</a></li>
+</div>
+    <div class="dropdown"> 
+    <button class="dropbutton">
+<div class="films"> 
+    <li> <a> films </a></li>
+<div class="dropdown-items">
+    <!-- replace href with actual content present in page-->
+    <li><a href ="films1.html"> thriller </a></li>
+    <li><a href ="films2.html"> horror </a></li>
+</div>
+</div>
+</div>
+</button>
+<div class="tvseries"> 
+<li><a href ="tvseries.html"> tv series </a></li>
+</div>
+<div class="contactme"> 
+<li> <a href ="contactme.html"> contact me </a></li>
+</div>
+</div>
+</div>
+</ul>
+</nav>
+</div> <!-- div for animated sidebar-->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+<!-- span element to change the word's color -->
+<h1> <span style="color:rgba(198, 134, 167, 0.678);">AYSA'S</span>
+    <br><span style="color:rgb(192, 163, 163);">FILM</span>
+    <br><span style="color:rgba(114, 82, 82, 0.827);">PORTFOLIO</span></h1>
+    <h1> ʚ♡ɞ </h1>
+
+    <img src = "images/tulips2.jpg" alt="tulips">
+
+    <br> <br> 
+<div class = "container2">
+    <h2 id = "education" class="text"> <i> Education </i></h2>
+</div>
+
+<!-- assigning a class to the image to center align it -->
+<img src = "images/education.jpeg" alt="picture" class ="image"
+
+<!-- text here -->
+<p> For primary school, I studied in School Of Knowledge, Sharjah up until 6th grade. <br>
+Then I moved to British International School, Ajman to fully complete my studies. <br>I did my a-levels there and succesfully graduated!! <br>
+Now I'm doing my bachelors degree in Creative Computing at Bath Spa University RAK.
+</p>
+<br>
+
+
+<!-- skill bar -->
+<div class = "container8">
+    <h2 id = "education" class="text"> <i> Skills </i></h2>
+</div>
+<div class ="skillbar">
+    <div class="skills">
+        <h3> HTML </h3>
+        <div class ="progressbar">
+            <div class="html"><span>85%</span></div>
+        </div>
+        <h3> CSS </h3>
+        <div class ="progressbar">
+            <div class="css"><span>80%</span></div>
+        </div>
+        <h3> Python </h3>
+        <div class ="progressbar">
+            <div class="python"><span>75%</span></div>
+        </div>
+        <h3> Javascript </h3>
+        <div class ="progressbar">
+            <div class="java"><span>65%</span></div>
+        </div>
+        <h3> Canva </h3>
+        <div class ="progressbar">
+            <div class="canva"><span>85%</span></div>
+        </div>
+        <h3> Figma </h3>
+        <div class ="progressbar">
+            <div class="figma"><span>85%</span></div>
+        </div>
+    </div>
+</div>
+
+<div class = "container2">
+    <h2 id = "education" class="text"> <i> Certificates </i></h2>
+</div>
+
+<div class = "gallery">
+    <div>
+        <img src ="images/html.png">
+        <img src ="images/css.png">
+        <img src ="images/python.png">
+    </div>
+</div>
+
+<!-- javascript for gallery section -->
+<script>
+    let scrollContainer = document.querySelector(".gallery");
+    scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+</script>
+
+
+<br><br>
+<a href="index.html" class="previous round">&#8249;</a> 
+<br><br>
+<a href="films1.html" class="next round">&#8250;</a>
+
+</body>
+</html>
