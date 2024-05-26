@@ -291,6 +291,7 @@ p {
     color: #A98787;
 }
 
+/* to adjust the reviews */
 .review {
     text-align: center;
     float: center;
@@ -314,9 +315,11 @@ p {
     margin-top:-68%
 }
 
+/* to adjust the ratings under each poster */
 .stars {
     float: center;
     width: 50%;
+    /* center aligning the stars */
     margin-left: 43%;
     color: #A98787;
 }
@@ -342,10 +345,17 @@ p {
     width: 50%;
 }
 
-.stars4 {
+.stars45 {
     float: center;
     width: 50%;
     margin-left: 45%;
+    color: #A98787;
+}
+
+.stars4 {
+    float: center;
+    width: 50%;
+    margin-left: 43%;
     color: #A98787;
 }
 
@@ -370,7 +380,6 @@ p {
 }
 
 /* for styling next/prev buttons */
-
 .next {
     background-color:#A98787;
     color: white;
@@ -415,6 +424,7 @@ a:hover {
     color: #A98787;
 }
 
+/* when the user hovers over the icon */
 .fa:hover {
     opacity: 0.12;
 }
